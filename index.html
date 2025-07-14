@@ -1,215 +1,277 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description"
-    content="Portfolio of a skilled web developer with an interactive particle background that moves toward the cursor.">
-  <title>Arbaz Khan | Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfolio of Arbaz Khan, a passionate Web Developer showcasing projects, skills, and education with dynamic animations.">
+    <title>Arbaz Khan | Portfolio</title>
+    <!-- Google Fonts: Poppins for general text, Roboto Mono for code/tech terms -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto+Mono:wght@400;600&display=swap"
+        rel="stylesheet">
+    <!-- AOS (Animate On Scroll) library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Particles.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <!-- Particles.js Background -->
-  <div id="particles-js"></div>
 
-  <nav>
-    <div class="nav-left">ARBAZ KHAN</div>
-    <div class="menu-toggle" id="mobile-menu">&#9776;</div>
-    <ul class="nav-list">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><a href="Arbaz Khan Resume.pdf" target="_blank">Resume</a></li>
-    </ul>
-  </nav>
+    <div id="particles-js"></div>
 
-  <section id="home">
+    <nav class="navbar">
+        <div class="navbar-container"> <!-- New container for full-width navbar content -->
+            <div class="logo"></div>
+            <button class="mobile-menu" id="mobile-menu" aria-label="Toggle navigation menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="nav-links nav-list">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="Arbaz Khan Resume.pdf" target="_blank" aria-label="Download Resume">Resume</a></li>
+            </ul>
+        </div>
+    </nav>
 
-    <div class="center-container">
-      <h3>I am <span id="role-text">Arbaz Khan.</span></h3>
-    </div>
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">ARBAZ KHAN</h1>
+            <p class="tagline" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                <span id="role-text">Web Developer.</span>
+            </p>
+            <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+                I’m a passionate Web Developer who transforms ideas into responsive, user-friendly websites. With a
+                strong eye
+                for design and a love for clean code, I build digital experiences that not only look great but also
+                perform
+                seamlessly. Always learning, always creating — I turn vision into reality, one line of code at a time.
+            </p>
+            <div class="social-links" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">
+                <a href="https://github.com/arbazz87" target="_blank" aria-label="GitHub Profile">GitHub</a>
+                <a href="https://www.linkedin.com/in/arbazz87/" target="_blank"
+                    aria-label="LinkedIn Profile">LinkedIn</a>
+            </div>
+        </div>
+    </section>
 
-    <p>I’m a passionate Web Developer who transforms ideas into responsive, user-friendly websites. With a strong eye
-      for design and a love for clean code, I build digital experiences that not only look great but also perform
-      seamlessly. Always learning, always creating — I turn vision into reality, one line of code at a time.</p>
-  </section>
+    <section id="projects" class="section-padded">
+        <h2 class="section-title" data-aos="fade-down" data-aos-duration="800">Projects</h2>
+        <div class="project-grid">
+            <div class="project-card" data-aos="zoom-in-up" data-aos-duration="800" data-aos-delay="100">
+                <h3>MEDIPLUS HOSPITAL WEBSITE</h3>
+                <p class="original-description">A fully Responsive Mediplus Hospital Website built with HTML, CSS and
+                    JavaScript.</p>
+                <div class="project-links">
+                    <a href="https://arbazz87.github.io/Hospital/" target="_blank">Live Demo</a>
+                    <a href="https://github.com/arbazz87/Hospital" target="_blank">GitHub</a>
+                </div>
+            </div>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project-grid">
-      <div class="project-card"><br>
-        <h3>MEDIPLUS HOSPITAL WEBSITE</h3>
-        <p>A fully Responsive Mediplus Hospital Website built with HTML, CSS and JavaScript.</p>
-        <a href="https://arbazz87.github.io/Hospital/" target="_blank">Live Demo</a> | <a
-          href="https://github.com/arbazz87/Hospital" target="_blank">GitHub</a>
-      </div>
-      <div class="project-card"><br>
-        <h3>AIT WEBSITE</h3>
-        <p>A fully Responsive AIT Website built with HTML, CSS and JavaScript.</p>
-        <a href="https://arbazz87.github.io/AIT/" target="_blank">Live Demo</a> | <a
-          href="https://github.com/arbazz87/AIT" target="_blank">GitHub</a>
-      </div>
-      <div class="project-card"><br>
-        <h3>CURRENCY CONVERTER</h3>
-        <p>A fully Responsive Currency Converter built with HTML, CSS, JavaScript and Bootstrap.</p>
-        <a href="https://arbazz87.github.io/Currency-Converter/" target="_blank">Live Demo</a> | <a
-          href="https://github.com/arbazz87/Currency-Converter" target="_blank">GitHub</a>
-      </div>
-      <div class="project-card"><br>
-        <h3>QUIZ WEBSITE</h3>
-        <p>A fully Responsive Quiz App built with HTML, CSS and JavaScript.</p>
-        <a href="https://arbazz87.github.io/quiz-web/" target="_blank">Live Demo</a> | <a
-          href="https://github.com/arbazz87/quiz-web" target="_blank">GitHub</a>
-      </div>
-      <div class="project-card"><br>
-        <h3>MOVIE CLONE WEBSITE</h3>
-        <p>A fully Responsive Movie Clone Website built with HTML, CSS and JavaScript.</p>
-        <a href="https://arbazz87.github.io/movie-web/" target="_blank">Live Demo</a> | <a
-          href="https://github.com/arbazz87/movie-web" target="_blank">GitHub</a>
-      </div>
-      <div class="project-card"><br>
-        <h3>ZAM ZAM TRAVELS CLONE</h3>
-        <p>A fully Responsive Zam Zam Travels Clone built with HTML, CSS and JavaScript.</p>
-        <a href="https://arbazz87.github.io/zam-zam-web/" target="_blank">Live Demo</a> | <a
-          href="https://github.com/arbazz87/zam-zam-web" target="_blank">GitHub</a>
-      </div>
-      <div class="project-card"><br>
-        <h3>MEMORY BASED CARD GAME</h3>
-        <p>A fully Responsive Memory-Based Card Game built with HTML, CSS and JavaScript.</p>
-        <a href="https://arbazz87.github.io/Card-Game/" target="_blank">Live Demo</a> | <a
-          href="https://github.com/arbazz87/Card-Game" target="_blank">GitHub</a>
-      </div>
-      <div class="project-card"><br>
-        <h3>DRAG & DROP PUZZLE GAME</h3>
-        <p>A fully Responsive Drag & Drop Puzzle Game built with HTML, CSS, JavaScript.</p>
-        <a href="https://arbazz87.github.io/Puzzle-Game/" target="_blank">Live Demo</a> | <a
-          href="https://github.com/arbazz87/Puzzle-Game" target="_blank">GitHub</a>
-      </div>
-      <div class="project-card"><br>
-        <h3>TYPING SPEED BATTLE GAME</h3>
-        <p>A fully Responsive Typing Speed Battle Game built with HTML, CSS, JavaScript.</p>
-        <a href="https://arbazz87.github.io/Typing-Game/" target="_blank">Live Demo</a> | <a
-          href="https://github.com/arbazz87/Typing-Game" target="_blank">GitHub</a>
-      </div>
-    </div>
-  </section>
+            <div class="project-card" data-aos="zoom-in-up" data-aos-duration="800" data-aos-delay="100">
+                <h3>WEATHER APPLICATION</h3>
+                <p class="original-description">A fully Responsive Weather Application built with HTML, CSS and
+                    JavaScript.</p>
+                <div class="project-links">
+                    <a href="https://arbazz87.github.io/weather-app/" target="_blank">Live Demo</a>
+                    <a href="https://github.com/arbazz87/weather-app" target="_blank">GitHub</a>
+                </div>
+            </div>
 
-  <section id="skills">
-    <h2>Skills</h2>
-    <div class="category">
-      <h3>Languages</h3>
-      <ul>
-        <li>C</li>
-        <li>C++</li>
-        <li>C#</li>
-        <li>Java</li>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-      </ul>
-    </div>
-    <div class="category">
-      <h3>Frameworks</h3>
-      <ul>
-        <li>Angular</li>
-        <li>.NET</li>
-        <li>MVC</li>
-      </ul>
-    </div>
-    <div class="category">
-      <h3>Databases</h3>
-      <ul>
-        <li>MySQL</li>
-        <li>Access</li>
-      </ul>
-    </div>
-    <div class="category">
-      <h3>Platforms</h3>
-      <ul>
-        <li>Visual Studio Code</li>
-        <li>Visual Studio</li>
-        <li>GitHub</li>
-        <li>Jira</li>
-      </ul>
-    </div>
-  </section>
+            <div class="project-card" data-aos="zoom-in-up" data-aos-duration="800" data-aos-delay="300">
+                <h3>CURRENCY CONVERTER</h3>
+                <p class="original-description">A fully Responsive Currency Converter built with HTML, CSS, JavaScript
+                    and Bootstrap.</p>
+                <div class="project-links">
+                    <a href="https://arbazz87.github.io/Currency-Converter/" target="_blank">Live Demo</a>
+                    <a href="https://github.com/arbazz87/Currency-Converter" target="_blank">GitHub</a>
+                </div>
+            </div>
 
-  <section id="experience">
-    <h2>Experience</h2>
-    <div class="timeline">
-      <div class="timeline-item">
-        <h3>Full-Stack Developer At Wainfo Technologies</h3>
-        <p>2025 - Present</p>
-        <p>Designed and developed responsive web applications using HTML, CSS and JavaScript.</p>
-      </div>
-      <div class="timeline-item">
-        <h3>Freelance Web Developer</h3>
-        <p>2024 - 2025</p>
-        <p>Created custom websites for small businesses, focusing on user experience and performance.</p>
-      </div>
-    </div>
-  </section>
+            <div class="project-card" data-aos="zoom-in-up" data-aos-duration="800" data-aos-delay="400">
+                <h3>QUIZ WEBSITE</h3>
+                <p class="original-description">A fully Responsive Quiz App built with HTML, CSS and JavaScript.</p>
+                <div class="project-links">
+                    <a href="https://arbazz87.github.io/quiz-web/" target="_blank">Live Demo</a>
+                    <a href="https://github.com/arbazz87/quiz-web" target="_blank">GitHub</a>
+                </div>
+            </div>
 
-  <section id="education">
-    <h2>Education</h2>
-    <div class="timeline">
-      <div class="timeline-item">
-        <h3>S.S.C - Secondary School Certificate</h3>
-        <p>Sarosh High School | 2019 - 2020</p>
-        <p>Percentage - 85.40%</p>
-      </div>
-    </div>
-    <div class="timeline">
-      <div class="timeline-item">
-        <h3>H.S.C - Higher Secondary Certificate</h3>
-        <p>Dr Rafiq Zakaria Campus | 2021 - 2022</p>
-        <p>Percentage - 74.00%</p>
-      </div>
-    </div>
-    <div class="timeline">
-      <div class="timeline-item">
-        <h3>B.C.A - Bachelors of Computer Applications</h3>
-        <p>Dr. Babasaheb Ambedkar Marathwada University | 2022 - 2025</p>
-        <p>Percentage - 66.60%</p>
-      </div>
-    </div>
-  </section>
+            <div class="project-card" data-aos="zoom-in-up" data-aos-duration="800" data-aos-delay="500">
+                <h3>MOVIE CLONE WEBSITE</h3>
+                <p class="original-description">A fully Responsive Movie Clone Website built with HTML, CSS and
+                    JavaScript.</p>
+                <div class="project-links">
+                    <a href="https://arbazz87.github.io/movie-web/" target="_blank">Live Demo</a>
+                    <a href="https://github.com/arbazz87/movie-web" target="_blank">GitHub</a>
+                </div>
+            </div>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <div class="timeline">
-      <div class="timeline-item">
-        <h3>Email -</h3>
-        <p>arbaazkhann2003@gmail.com</p><br>
+            <div class="project-card" data-aos="zoom-in-up" data-aos-duration="800" data-aos-delay="600">
+                <h3>ZAM ZAM TRAVELS CLONE</h3>
+                <p class="original-description">A fully Responsive Zam Zam Travels Clone built with HTML, CSS and
+                    JavaScript.</p>
+                <div class="project-links">
+                    <a href="https://arbazz87.github.io/zam-zam-web/" target="_blank">Live Demo</a>
+                    <a href="https://github.com/arbazz87/zam-zam-web" target="_blank">GitHub</a>
+                </div>
+            </div>
 
-        <h3>Phone -</h3>
-        <p>+91 - 8055737359</p><br>
+            <div class="project-card" data-aos="zoom-in-up" data-aos-duration="800" data-aos-delay="700">
+                <h3>MEMORY BASED CARD GAME</h3>
+                <p class="original-description">A fully Responsive Memory-Based Card Game built with HTML, CSS and
+                    JavaScript.</p>
+                <div class="project-links">
+                    <a href="https://arbazz87.github.io/Card-Game/" target="_blank">Live Demo</a>
+                    <a href="https://github.com/arbazz87/Card-Game" target="_blank">GitHub</a>
+                </div>
+            </div>
 
-        <h3>Location -</h3>
-        <p>Aurangabad, Maharashtra, India</p><br>
+            <div class="project-card" data-aos="zoom-in-up" data-aos-duration="800" data-aos-delay="800">
+                <h3>DRAG & DROP PUZZLE GAME</h3>
+                <p class="original-description">A fully Responsive Drag & Drop Puzzle Game built with HTML, CSS,
+                    JavaScript.</p>
+                <div class="project-links">
+                    <a href="https://arbazz87.github.io/Puzzle-Game/" target="_blank">Live Demo</a>
+                    <a href="https://github.com/arbazz87/Puzzle-Game" target="_blank">GitHub</a>
+                </div>
+            </div>
 
-        <h3>LinkedIn -</h3>
-        <p><a href="https://www.linkedin.com/in/arbazz87/" target="_blank"
-            style="color:#8c92d7;">linkedin.com/in/arbazz87</a></p><br>
+            <div class="project-card" data-aos="zoom-in-up" data-aos-duration="800" data-aos-delay="900">
+                <h3>TYPING SPEED BATTLE GAME</h3>
+                <p class="original-description">A fully Responsive Typing Speed Battle Game built with HTML, CSS,
+                    JavaScript.</p>
+                <div class="project-links">
+                    <a href="https://arbazz87.github.io/Typing-Game/" target="_blank">Live Demo</a>
+                    <a href="https://github.com/arbazz87/Typing-Game" target="_blank">GitHub</a>
+                </div>
+            </div>
 
-        <h3>GitHub -</h3>
-        <p><a href="https://github.com/arbazz87" target="_blank" style="color:#8c92d7;">github.com/arbazz87</a></p>
-      </div>
-    </div>
-  </section>
+            <div class="project-card" data-aos="zoom-in-up" data-aos-duration="800" data-aos-delay="200">
+                <h3>AIT WEBSITE</h3>
+                <p class="original-description">A fully Responsive AIT Website built with HTML, CSS and JavaScript.</p>
+                <div class="project-links">
+                    <a href="https://arbazz87.github.io/AIT/" target="_blank">Live Demo</a>
+                    <a href="https://github.com/arbazz87/AIT" target="_blank">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <footer>
-    <p>© 2025 Arbaz Khan. All rights reserved.</p>
-  </footer>
+    <section class="section-padded" id="skills">
+        <h2 class="section-title">Skills</h2>
 
-  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-  <script src="script.js"></script>
+        <div class="skills-section">
+            <div class="skill-group">
+                <h3>Languages</h3>
+                <div class="skill-items">
+                    <span class="skill">C</span>
+                    <span class="skill">C++</span>
+                    <span class="skill">C#</span>
+                    <span class="skill">Java</span>
+                    <span class="skill">HTML</span>
+                    <span class="skill">CSS</span>
+                    <span class="skill">JavaScript</span>
+                </div>
+            </div>
 
+            <div class="skill-group">
+                <h3>Frameworks</h3>
+                <div class="skill-items">
+                    <span class="skill">Angular</span>
+                    <span class="skill">.NET</span>
+                    <span class="skill">MVC</span>
+                </div>
+            </div>
+
+            <div class="skill-group">
+                <h3>Databases</h3>
+                <div class="skill-items">
+                    <span class="skill">MySQL</span>
+                    <span class="skill">Access</span>
+                </div>
+            </div>
+
+            <div class="skill-group">
+                <h3>Platforms</h3>
+                <div class="skill-items">
+                    <span class="skill">Visual Studio Code</span>
+                    <span class="skill">Visual Studio</span>
+                    <span class="skill">GitHub</span>
+                    <span class="skill">Jira</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padded" id="education">
+        <h2 class="section-title">Education</h2>
+        <div class="timeline">
+            <div class="timeline-item" data-aos="fade-right">
+                    <h3>BCA - Bachelor of Computer Application</h3>
+                    <div class="timeline-meta">Dr. Babasaheb Ambedkar Marathwada University | 2022 – 2025</div>
+                    <p>Pursuing BCA with a strong foundation in web development, programming, and project building.</p>
+                </div>
+                <div class="timeline-item" data-aos="fade-left" data-aos-delay="150">
+                    <h3>HSC – Higher Secondary Certificate</h3>
+                    <div class="timeline-meta">Dr. Rafiq Zakaria Campus | 2020 – 2022</div>
+                    <p>Completed 12th grade with PCMB (Physics, Chemistry, Maths, Biology).</p>
+                </div>
+                <div class="timeline-item" data-aos="fade-right" data-aos-delay="150">
+                    <h3>SSC – Secondary School Certificate</h3>
+                    <div class="timeline-meta">Sarosh High School | 2019 – 2020</div>
+                    <p>Completed 10th grade with a focus on Science and Mathematics.</p>
+                </div>
+            </div>
+    </section>
+
+    <section class="section-padded" id="experience">
+        <h2 class="section-title">Experience</h2>
+        <div class="timeline">
+            <div class="timeline-item" data-aos="fade-right">
+                <h3>Web Development Intern</h3>
+                <div class="timeline-meta">WinfoIntern | May 2025 – Present</div>
+                <p>Built dynamic UI pages with HTML, CSS, JS. Also worked on minor backend tasks with ASP.NET and SQL
+                    Server.</p>
+            </div>
+            <div class="timeline-item" data-aos="fade-left" data-aos-delay="150">
+                <h3>Freelance Web Projects</h3>
+                <div class="timeline-meta">Remote | Jan 2024 – Apr 2025</div>
+                <p>Developed several .NET and Web projects with dynamic features using modern stacks like Angular, MVC,
+                    and more.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact" class="section-padded">
+        <h2 class="section-title" data-aos="fade-down" data-aos-duration="800">Contact Me</h2>
+        <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">I'm always open to new opportunities and
+            collaborations. Feel free to reach out!</p><br>
+
+        <div class="contact-info" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+            <p>Email : <a href="mailto:arbaazkhann2003@gmail.com">arbaazkhann2003@gmail.com</a></p>
+            <p>Phone : <a href="tel:+918055737359">+91 - 8055737359</a></p>
+            <p>Location : <a href="#">Aurangabad, Maharashtra, India</a></p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 Arbaz Khan. All rights reserved.</p>
+    </footer>
+
+    <!-- AOS (Animate On Scroll) JavaScript -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="script.js"></script>
 </body>
 
 </html>

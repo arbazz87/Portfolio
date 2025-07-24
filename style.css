@@ -354,7 +354,8 @@ a:hover {
     background: var(--secondary-color);
     color: #fff;
     transform: translateY(-4px);
-    box-shadow: 0 4px 15px rgba(255, 64, 129, 0.4);
+    box-shadow: 0 15px 30px rgba(255, 64, 129, 0.4), 0 0 20px rgba(255, 64, 129, 0.4);
+    border-color: var(--primary-color);
 }
 
 @media (max-width: 480px) {
